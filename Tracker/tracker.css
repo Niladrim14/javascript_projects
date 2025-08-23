@@ -1,0 +1,172 @@
+/* ==== Reset ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==== Body ==== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #111 0%, #0a0a0a 100%);
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ==== Main Container ==== */
+.container {
+    width: 90%;
+    max-width: 520px;
+    background: #141414;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.85), 0 0 30px rgba(239, 68, 68, 0.2);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* ==== Headings ==== */
+/* ==== Headings ==== */
+/* ==== Headings ==== */
+/* ==== Headings ==== */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 22px;
+    letter-spacing: 1.5px;
+
+    /* Gradient Text */
+    background: linear-gradient(90deg, #ef4444, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Glow */
+    text-shadow: 0 0 10px rgba(239,68,68,0.7),
+                 0 0 20px rgba(239,68,68,0.5);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 0 12px;
+    letter-spacing: 1px;
+
+    /* Gradient Text */
+    background: linear-gradient(90deg, #22c55e, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Glow */
+    text-shadow: 0 0 8px rgba(34,197,94,0.6),
+                 0 0 16px rgba(34,197,94,0.4);
+}
+
+
+
+
+h3 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ==== Form ==== */
+#expense-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+#expense-form input {
+    flex: 1;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #1e1e1e;
+    color: #f5f5f5;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #ef4444;
+    transition: all 0.3s ease;
+}
+
+#expense-form input:focus {
+    border: 1px solid #22c55e;
+    box-shadow: 0 0 10px rgba(34,197,94,0.5);
+}
+
+#expense-form input::placeholder {
+    color: #aaa;
+}
+
+/* ==== Button ==== */
+button {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    transform: scale(1.07);
+    box-shadow: 0 0 18px rgba(34,197,94,0.7), 0 0 25px rgba(239,68,68,0.5);
+}
+
+/* ==== Expense List ==== */
+#expense-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#expense-list li {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5f5f5;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+    border-left: 5px solid #ef4444;
+    transition: all 0.3s ease;
+}
+
+#expense-list li:hover {
+    transform: translateX(5px);
+    border-left: 5px solid #22c55e;
+    box-shadow: 0 0 15px rgba(239,68,68,0.4), 0 0 10px rgba(34,197,94,0.4);
+}
+
+/* ==== Total Section ==== */
+#total {
+    margin-top: 25px;
+    padding: 18px;
+    background: linear-gradient(135deg, #0d0d0d, #1f1f1f);
+    border-radius: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: #22c55e;
+    font-size: 18px;
+    border: 1px solid #ef4444;
+    box-shadow: inset 0 2px 12px rgba(0,0,0,0.6), 0 0 15px rgba(239,68,68,0.3);
+    letter-spacing: 0.8px;
+}

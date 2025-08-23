@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const carttotal = document.getElementById("card-total");
     const total = document.getElementById("total-price");
     const coutbtn = document.getElementById("checkout-btn");
+    const backbtn = document.getElementById("remove-btn");
 
 
 
@@ -52,6 +53,7 @@ function rendercart (){
     carttotal.classList.remove("hidden");
         cart.forEach((item,index)=>{
             totalprice += item.price;
+            
             const cartitem = document.createElement('div');
             cartitem.innerHTML =`
             ${item.name} -$${item.price.toFixed(2)}`;
@@ -71,4 +73,18 @@ function rendercart (){
         rendercart();
         total.textContent = `$ 0.00`;
     }) 
+
+
+backbtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (cart.length > 0) {
+        let currentTotal = parseFloat(total.textContent.trim());
+        total.textContent = `${currentTotal.toFixed(2)}`;
+        cart.pop(); 
+        rendercart();
+    }
 })
+
+
+})
+

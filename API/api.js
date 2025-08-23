@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    const getweatherbtn =document.getElementById("get-weather-btn");
    const weatherinfo  = document.getElementById("weather-info");
    const citynamed  = document.getElementById("city-name");
-   const tempd  = document.getElementById("temaprature");
+   const tempd  = document.getElementById("temperature");
    const desd = document.getElementById("description");
    const errord = document.getElementById("error-message"); 
     const apikey = "7191eb93ab1f495e87559043343e1adc";
@@ -35,7 +35,18 @@ document.addEventListener('DOMContentLoaded',()=>{
       console.log("Response", data);
       return data;
     }
-      function displayw (weatherdata){
+      function displayw (data){
+        const{name,main,weather}= data;
+
+        citynamed.textContent = name;
+        tempd.textContent =`Temparature : ${main.temp}`;
+        desd.textContent =`Weather: ${weather[0].description}`;
+
+        
+        weatherinfo.classList.remove("hidden");
+        errord.classList.add("hidden");
+
+        
 
       }
       function errorf (){

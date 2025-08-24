@@ -66,7 +66,7 @@ function rendercart (){
     
     }
 }
-
+ 
     coutbtn.addEventListener('click',()=>{
         alert ('Checkout ho gaya jii');
         cart.length = 0;
@@ -84,6 +84,9 @@ backbtn.addEventListener('click', (e) => {
         rendercart();
     }
 })
+function savecart (){
+    localStorage.setItem("cart",JSON.stringify(cart));
+ }
 
 
 })

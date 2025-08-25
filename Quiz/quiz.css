@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container with glass effect */
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffdf6c;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  border-bottom: 3px solid #ffdf6c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Question text */
+#question-text {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #f1f1f1;
+}
+
+/* Choice list */
+#choice-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#choice-list li {
+  margin: 12px 0;
+}
+
+#choice-list button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#choice-list button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* General buttons */
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Hidden state */
+.hidden {
+  display: none;
+}
+
+/* Results */
+#result-container h2 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  color: #ffdf6c;
+}
+
+#score {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 18px 0;
+  color: #7cffc0;
+}
